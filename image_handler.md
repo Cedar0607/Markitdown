@@ -14,6 +14,16 @@ docker run -d \
   -p 8088:80 \
   -v /opt/rag-assets:/usr/share/nginx/html:ro \
   nginx:alpine
+
+```
+docker run -d \
+  --name rag-assets-nginx \
+  --restart unless-stopped \
+  -p 8088:80 \
+  -v /opt/rag-assets:/usr/share/nginx/html:ro \
+  nginx:latest
+
+```
 测试：
 
 curl -I http://127.0.0.1:8088/
