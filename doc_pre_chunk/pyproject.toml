@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doc-pre-chunk"
+version = "0.1.0"
+description = "Local multimodal Docx pre-chunking pipeline for RAG ingestion."
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[project.optional-dependencies]
+docling = [
+  "docling>=2.0.0"
+]
+dev = [
+  "pytest>=8.0.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
