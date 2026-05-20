@@ -1,0 +1,18 @@
+{
+  "vlm": {
+    "endpoint": "http://localhost:8000/v1/chat/completions",
+    "api_key": "your_api_key",
+    "model": "Qwen3-VL",
+    "timeout": 120,
+    "retries": 2
+  },
+  "docling": {
+    "artifacts_path": ""
+  },
+  "output": {
+    "base_dir": "outputs"
+  },
+  "runtime": {
+    "dry_run": false
+  }
+}
