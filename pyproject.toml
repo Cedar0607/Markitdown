@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doc-pre-chunk"
+version = "0.1.0"
+description = "Docx to Markdown preprocessor with Qwen3-VL image descriptions and RAG pre-chunk outputs."
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.31.0",
+  "docling>=2.0.0"
+]

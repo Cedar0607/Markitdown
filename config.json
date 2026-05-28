@@ -1,0 +1,27 @@
+{
+  "vlm": {
+    "endpoint": "http://localhost:8000/v1/chat/completions",
+    "api_key": "your_api_key",
+    "model": "Qwen3-VL",
+    "timeout": 120,
+    "retries": 2
+  },
+  "docling": {
+    "artifacts_path": ""
+  },
+  "output": {
+    "base_dir": "outputs"
+  },
+  "chunking": {
+    "enabled": true,
+    "divider": "<<<SECTION_DIVIDER>>>",
+    "max_chars": 1800,
+    "split_header_depth": 3,
+    "inject_breadcrumb": true,
+    "breadcrumb_prefix": "上下文",
+    "output_jsonl": true
+  },
+  "runtime": {
+    "dry_run": false
+  }
+}
